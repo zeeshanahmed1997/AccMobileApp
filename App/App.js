@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { Button, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native'
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import { NavigationContainer } from '@react-navigation/native';
-
+import { createStackNavigator } from '@react-navigation/stack';
+import { RNSScreen } from 'react-native-screens/native-stack';
 function HomeScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -24,7 +25,7 @@ function NotificationsScreen({ navigation }) {
 
 const Drawer = createDrawerNavigator();
 
-export default function App() {
+const App = () => {
   return (
     <NavigationContainer>
       <Drawer.Navigator initialRouteName="Home">
@@ -34,3 +35,5 @@ export default function App() {
     </NavigationContainer>
   );
 }
+
+export default App;
