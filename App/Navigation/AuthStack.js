@@ -1,23 +1,40 @@
 import * as React from 'react';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createStackNavigator } from '@react-navigation/stack';
 import Login from '../Screens/Account/Login';
 import Register from '../Screens/Account/Register';
 
-const Tab = createBottomTabNavigator();
+const Stack = createStackNavigator();
 
 const AuthStack = () => {
     return (
-        <Tab.Navigator initialRouteName='Login' tabBar={() => null}>
-            <Tab.Screen
+        <Stack.Navigator
+            initialRouteName='Login'
+            screenOptions={{
+                headerTitleAlign: 'center', // Center the header title
+                headerStyle: {
+                    backgroundColor: 'navy',
+                },
+                headerTintColor: 'white',
+                headerShown: false,
+            }
+            }
+        >
+            <Stack.Screen
                 name="Login"
                 component={Login}
+                options={{
+                    headerShown: false, // hide header for Login screen
+                }}
             />
-            <Tab.Screen
+            <Stack.Screen
                 name="Register"
                 component={Register}
+                options={{
+                    headerShown: false, // hide header for Register screen
+                }}
             />
-        </Tab.Navigator>
-    )
+        </Stack.Navigator >
+    );
 }
 
 export default AuthStack;

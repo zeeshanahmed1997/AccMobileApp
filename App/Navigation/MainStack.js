@@ -4,26 +4,24 @@ import AuthStack from './AuthStack';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faShoppingCart, faUserCircle } from '@fortawesome/free-solid-svg-icons';
-
+import ProductsStack from './ProductsStack';
 const Drawer = createDrawerNavigator();
 
-const MainStack = () => {
+const MainStack = ({ navigation }) => {
     return (
         <Drawer.Navigator initialRouteName="Products">
             <Drawer.Screen
                 name="Products"
-                component={ProductsLandingPage}
+                component={ProductsStack} // Use ProductsStack here
                 options={{
-                    headerTintColor: 'white',
                     headerStyle: {
-                        backgroundColor: 'navy', // Set the header background color to silver
-                        borderColor: 'gray',
-                        borderBottomWidth: 2,
+                        backgroundColor: 'navy', // Change header background color to navy
                     },
+                    headerTitleAlign: 'center',
                     drawerActiveBackgroundColor: 'navy',
                     drawerInactiveBackgroundColor: 'white',
+                    headerTintColor: 'white',
                     drawerLabel: 'Products',
-                    drawerActiveTintColor: 'white',
                     drawerIcon: ({ focused, color, size }) => (
                         <FontAwesomeIcon icon={faShoppingCart} size={size} color={focused ? 'white' : 'black'} />
                     ),
@@ -33,6 +31,13 @@ const MainStack = () => {
                 name="Login Page"
                 component={AuthStack}
                 options={{
+                    headerStyle: {
+                        backgroundColor: 'navy', // Change header background color to navy
+                    },
+                    headerTitleAlign: 'center',
+                    drawerActiveBackgroundColor: 'navy',
+                    drawerInactiveBackgroundColor: 'white',
+                    headerTintColor: 'white',
                     drawerLabel: 'Login Page',
                     drawerIcon: ({ focused, color, size }) => (
                         <FontAwesomeIcon icon={faUserCircle} size={size} color={focused ? 'white' : 'black'} />
