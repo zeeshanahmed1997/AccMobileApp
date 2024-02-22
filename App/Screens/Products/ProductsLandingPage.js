@@ -5,7 +5,8 @@ function ProductsLandingPage() {
     const navigation = useNavigation(); // Access the navigation object using useNavigation hook
 
     const goToMainStack = () => {
-        navigation.navigate('Login Page', { screen: 'Login' }); // Navigate to the Login screen within the MainStack
+        // navigation.navigate('Login Page', { screen: 'Login' }); // Navigate to the Login screen within the MainStack
+        navigation.navigate('ProductDetailScreen');
     };
     return (
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>

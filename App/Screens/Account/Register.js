@@ -6,7 +6,10 @@ function Register() {
     const navigation = useNavigation(); // Access the navigation object using useNavigation hook
 
     const goToMainStack = () => {
-        navigation.navigate('Products');
+        navigation.reset({
+            index: 0,
+            routes: [{ name: 'ProductStack' }],
+        });
     };
 
 
