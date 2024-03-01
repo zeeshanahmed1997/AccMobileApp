@@ -1,10 +1,15 @@
-import * as React from 'react';
+import React from 'react';
+import { Provider } from 'react-redux';
+import store from './App/Redux/store'; // Update the path to your Redux store setup
+
 import { NavigationContainer } from '@react-navigation/native';
-import MainStack from './Navigation/MainStack';
+import MainStack from './App/Navigation/MainStack';
 
 const App = () => {
   return (
-    <MainStack />
+    <Provider store={store}>
+      <MainStack />
+    </Provider>
   );
 };
 
