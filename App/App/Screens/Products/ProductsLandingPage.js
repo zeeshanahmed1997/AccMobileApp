@@ -73,7 +73,7 @@ const ProductImagesList = () => {
                             <Text style={styles.NameText}>{item.images.product.result.productName}</Text>
                             <Text style={styles.descriptionText}>{item.images.product.result.description}</Text>
                             <Text style={styles.priceText}>Rs. {item.images.product.result.price}</Text>
-                            <View style={styles.countContainer}>
+                            {/* <View style={styles.countContainer}>
                                 <TouchableOpacity underlayColor="transparent" onPress={() => updateItemCount(item.images.productId, (itemCounts[item.images.productId] || 0) + 1)}>
                                     <FontAwesomeIcon icon={faSquarePlus} size={20} color="black" style={styles.countButton} />
                                 </TouchableOpacity>
@@ -81,10 +81,14 @@ const ProductImagesList = () => {
                                 <TouchableOpacity underlayColor="transparent" onPress={() => updateItemCount(item.images.productId, Math.max((itemCounts[item.images.productId] || 0) - 1, 0))}>
                                     <FontAwesomeIcon icon={faSquareMinus} size={20} color="black" style={styles.countButton} />
                                 </TouchableOpacity>
-                            </View>
+                            </View> */}
                             <TouchableOpacity onPress={() => addToCartHandler(item.images.productId)}>
-                                <Text style={styles.addToCartText}>Add to Cart</Text>
+                                <View style={styles.addToCartButton}>
+                                    <FontAwesomeIcon icon={faShoppingCart} size={18} color="white" style={styles.cartIcon} />
+                                    <Text style={styles.addToCartText}>Add to Cart</Text>
+                                </View>
                             </TouchableOpacity>
+
                             {errorMessage ? <Text style={styles.errorMessage}>{errorMessage}</Text> : null}
                         </View>
                     </View>
@@ -142,19 +146,27 @@ const styles = StyleSheet.create({
         // borderWidth: 1,
         width: '40%'
     },
-    addToCartText: {
-        color: 'blue',
+    addToCartButton: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
         backgroundColor: 'green',
-        borderRadius: 5,
+        borderRadius: 2,
         borderWidth: 2,
         borderColor: 'green',
-        padding: 5,
-        textAlign: 'center',
-        width: '50%',
-        fontSize: 12,
-        color: 'black', // Change this to black
-        marginTop: 10
+        paddingVertical: 5,
+        paddingHorizontal: 10,
+        width: '70%',
+        marginTop: 10,
     },
+    cartIcon: {
+        marginRight: 10,
+    },
+    addToCartText: {
+        color: 'white',
+        fontSize: 12,
+    },
+
     countContainer: {
         marginTop: 20,
         flexDirection: 'row',
