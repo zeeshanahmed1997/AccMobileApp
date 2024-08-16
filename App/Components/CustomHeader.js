@@ -31,14 +31,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 10,
     backgroundColor: '#003366',
-    height: 100,
+    height: 60,
     justifyContent: 'space-between', // Ensures items are spaced correctly
   },
   title: {
     fontSize: 18,
     color: 'white',
     flex: 1, // Takes up remaining space between menu and user image
-    marginTop:30,
+    marginTop:0,
   },
   userImage: {
     width: 40, // Adjust size as needed
