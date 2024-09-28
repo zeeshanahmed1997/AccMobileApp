@@ -1,16 +1,21 @@
 import React from 'react';
-import { Provider } from 'react-redux';
-import store from './App/Redux/store'; // Update the path to your Redux store setup
-
+import { StyleSheet } from 'react-native';
+import StackNavigator from '../App/Navigation/StackNavigator'; // Ensure the path is correct
 import { NavigationContainer } from '@react-navigation/native';
-import MainStack from './App/Navigation/MainStack';
 
 const App = () => {
   return (
-    <Provider store={store}>
-      <MainStack />
-    </Provider>
+    <NavigationContainer>
+      <StackNavigator />
+    </NavigationContainer>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'red', // Set the background color to red
+  },
+});
 
 export default App;
