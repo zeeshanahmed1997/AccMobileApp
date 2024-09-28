@@ -1,0 +1,134 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\zamzam laptops\\source\\repos\\BlazorApp2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{503E5D6A-3C0C-4EC8-9557-073C821B7907}|BlazorApp2.csproj|c:\\users\\zamzam laptops\\source\\repos\\blazorapp2\\components\\pages\\protected.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{503E5D6A-3C0C-4EC8-9557-073C821B7907}|BlazorApp2.csproj|solutionrelative:components\\pages\\protected.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503E5D6A-3C0C-4EC8-9557-073C821B7907}|BlazorApp2.csproj|c:\\users\\zamzam laptops\\source\\repos\\blazorapp2\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{503E5D6A-3C0C-4EC8-9557-073C821B7907}|BlazorApp2.csproj|solutionrelative:components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503E5D6A-3C0C-4EC8-9557-073C821B7907}|BlazorApp2.csproj|c:\\users\\zamzam laptops\\source\\repos\\blazorapp2\\components\\pages\\customauthenticationstateprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{503E5D6A-3C0C-4EC8-9557-073C821B7907}|BlazorApp2.csproj|solutionrelative:components\\pages\\customauthenticationstateprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503E5D6A-3C0C-4EC8-9557-073C821B7907}|BlazorApp2.csproj|c:\\users\\zamzam laptops\\source\\repos\\blazorapp2\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{503E5D6A-3C0C-4EC8-9557-073C821B7907}|BlazorApp2.csproj|solutionrelative:components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503E5D6A-3C0C-4EC8-9557-073C821B7907}|BlazorApp2.csproj|c:\\users\\zamzam laptops\\source\\repos\\blazorapp2\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{503E5D6A-3C0C-4EC8-9557-073C821B7907}|BlazorApp2.csproj|solutionrelative:components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503E5D6A-3C0C-4EC8-9557-073C821B7907}|BlazorApp2.csproj|c:\\users\\zamzam laptops\\source\\repos\\blazorapp2\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{503E5D6A-3C0C-4EC8-9557-073C821B7907}|BlazorApp2.csproj|solutionrelative:components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503E5D6A-3C0C-4EC8-9557-073C821B7907}|BlazorApp2.csproj|c:\\users\\zamzam laptops\\source\\repos\\blazorapp2\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{503E5D6A-3C0C-4EC8-9557-073C821B7907}|BlazorApp2.csproj|solutionrelative:components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\zamzam laptops\\source\\repos\\BlazorApp2\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\zamzam laptops\\source\\repos\\BlazorApp2\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Components\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T02:25:29.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomAuthenticationStateProvider.cs",
+              "DocumentMoniker": "C:\\Users\\zamzam laptops\\source\\repos\\BlazorApp2\\Components\\Pages\\CustomAuthenticationStateProvider.cs",
+              "RelativeDocumentMoniker": "Components\\Pages\\CustomAuthenticationStateProvider.cs",
+              "ToolTip": "C:\\Users\\zamzam laptops\\source\\repos\\BlazorApp2\\Components\\Pages\\CustomAuthenticationStateProvider.cs",
+              "RelativeToolTip": "Components\\Pages\\CustomAuthenticationStateProvider.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAAADUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T18:34:22.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\zamzam laptops\\source\\repos\\BlazorApp2\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "Components\\_Imports.razor",
+              "ToolTip": "C:\\Users\\zamzam laptops\\source\\repos\\BlazorApp2\\Components\\_Imports.razor",
+              "RelativeToolTip": "Components\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T17:56:43.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Protected.razor",
+              "DocumentMoniker": "C:\\Users\\zamzam laptops\\source\\repos\\BlazorApp2\\Components\\Pages\\Protected.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Protected.razor",
+              "ToolTip": "C:\\Users\\zamzam laptops\\source\\repos\\BlazorApp2\\Components\\Pages\\Protected.razor",
+              "RelativeToolTip": "Components\\Pages\\Protected.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T17:54:53.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\zamzam laptops\\source\\repos\\BlazorApp2\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\zamzam laptops\\source\\repos\\BlazorApp2\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Components\\Pages\\Home.razor",
+              "ViewState": "AQIAABsAAAAAAAAAAAAkwCkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T17:53:48.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "C:\\Users\\zamzam laptops\\source\\repos\\BlazorApp2\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "Components\\Routes.razor",
+              "ToolTip": "C:\\Users\\zamzam laptops\\source\\repos\\BlazorApp2\\Components\\Routes.razor",
+              "RelativeToolTip": "Components\\Routes.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T17:31:01.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\zamzam laptops\\source\\repos\\BlazorApp2\\Components\\App.razor",
+              "RelativeDocumentMoniker": "Components\\App.razor",
+              "ToolTip": "C:\\Users\\zamzam laptops\\source\\repos\\BlazorApp2\\Components\\App.razor",
+              "RelativeToolTip": "Components\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T17:30:57.387Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

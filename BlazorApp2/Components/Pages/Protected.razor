@@ -1,0 +1,33 @@
+﻿@page "/protected"
+@using BlazorApp2.Pages
+@inject CustomAuthenticationStateProvider AuthenticationStateProvider
+
+<h3>Protected Page</h3>
+
+<AuthorizeView>
+    <Authorized>
+        <p>Welcome, @username! You are logged in and can access this protected page.</p>
+        <button @onclick="Logout">Logout</button>
+    </Authorized>
+    <NotAuthorized>
+        <p>You are not authorized to view this page. Please <a href="/login">login</a>.</p>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+    private string username;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        if (authState.User.Identity.IsAuthenticated)
+        {
+            username = authState.User.Identity.Name;
+        }
+    }
+
+    private void Logout()
+    {
+        AuthenticationStateProvider.MarkUserAsLoggedOut();
+    }
+}

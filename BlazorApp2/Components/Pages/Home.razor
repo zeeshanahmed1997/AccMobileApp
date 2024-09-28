@@ -1,0 +1,67 @@
+﻿@page "/"
+@using BlazorApp2.Pages
+@using Microsoft.AspNetCore.Components.Authorization
+@using System.Security.Claims
+@inject CustomAuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavigationManager
+
+<h3>Login</h3>
+
+<EditForm Model="loginModel" OnValidSubmit="HandleLogin" FormName="loginForm">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div>
+        <label for="username">Username:</label>
+        <InputText id="username" @bind-Value="loginModel.Username" />
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <InputText id="password" type="password" @bind-Value="loginModel.Password" />
+    </div>
+    <button type="submit">Login</button>
+</EditForm>
+
+@if (loginFailed)
+{
+    <p style="color:red;">Invalid login attempt.</p>
+}
+
+@code {
+    private LoginModel loginModel = new LoginModel();
+    private bool loginFailed = false;
+
+    private async Task HandleLogin()
+    {
+        // Hardcoded values for the sake of the example
+        if (loginModel.Username == null)
+        {
+            loginModel.Username = "admin";
+            loginModel.Password = "password";
+        }
+        if (loginModel.Username == "admin" && loginModel.Password == "password")
+        {
+            var claims = new List<Claim>
+{
+    new Claim(ClaimTypes.Name, loginModel.Username)  // Set the username claim
+    // Add more claims here if needed, like roles:
+    // new Claim(ClaimTypes.Role, "YourUserRole")
+};
+
+            var identity = new ClaimsIdentity(claims, "ZeeshanCookie");  // Specify the authentication type
+            var user = new ClaimsPrincipal(identity);
+
+            AuthenticationStateProvider.MarkUserAsAuthenticated(user);
+            NavigationManager.NavigateTo("/protected");
+        }
+        else
+        {
+            // Handle invalid login here (e.g., show an error message)
+        }
+    }
+
+    private class LoginModel
+    {
+        public string Username { get; set; }
+        public string Password { get; set; }
+    }
+}
